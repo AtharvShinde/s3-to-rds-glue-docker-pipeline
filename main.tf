@@ -12,7 +12,7 @@ resource "aws_db_instance" "my_rds" {
   allocated_storage    = 20
   engine               = "mysql"
   instance_class       = "db.t2.micro"
-  name                 = "mydatabase"
+  db_name              = "mydatabase"    # Changed 'name' to 'db_name'
   username             = "admin"
   password             = "password123"
   publicly_accessible  = true
